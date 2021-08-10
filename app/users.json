@@ -1,0 +1,9 @@
+[{
+    "label": "Username",
+    "name": "userName",
+    "type": "text"
+}, {
+    "label": "User email",
+    "name": "userEmail",
+    "type": "text"
+}]

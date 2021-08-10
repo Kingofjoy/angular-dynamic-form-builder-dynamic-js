@@ -1,0 +1,24 @@
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">Dynamic Forms</div>
+    <div class="card-body">
+      <dynamic-form-builder (onFormGroupChange)="onFormGroupChangeEvent($event)" [DataInputUpdates]="this.formUpdates"
+        [fields]="getFields()">
+      </dynamic-form-builder>
+      <!--
+         <dynamic-form-builder [(frmHandle)]="this.dynform" [fields]="getFields()"></dynamic-form-builder>
+      -->
+      <button  class="btn btn-primary" (click)="processData()"
+          >
+            AppAssert
+          </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12">
+  <div class="form-group" style="display:none" [formGroup]="form">
+    <label>JSON</label>
+    <textarea formControlName="fields" class="form-control" rows="3"></textarea>
+  </div>
+</div>
